@@ -1,0 +1,12 @@
+total 84
+drwxr-xr-x  6 brwnshoecrew brwnshoecrew  4096 Aug  4 00:47 .
+drwxr-xr-x  3 brwnshoecrew brwnshoecrew  4096 Jul 29 14:48 ..
+drwxr-xr-x  2 brwnshoecrew brwnshoecrew  4096 Jul 29 14:48 css
+-rw-r--r--  1 brwnshoecrew brwnshoecrew 21427 Jul 29 22:58 events.js
+-rwxr-xr-x  1 brwnshoecrew brwnshoecrew  1304 Aug  4 00:47 exploit.py
+drwxr-xr-x 87 brwnshoecrew brwnshoecrew  4096 Jul 29 14:48 node_modules
+-rw-r--r--  1 brwnshoecrew brwnshoecrew 25373 Oct  5  2020 package-lock.json
+-rw-r--r--  1 brwnshoecrew brwnshoecrew     0 Aug  4 00:47 results
+-rw-r--r--  1 brwnshoecrew brwnshoecrew  3315 Aug  4 00:40 server.js
+drwxr-xr-x  2 brwnshoecrew brwnshoecrew  4096 Jul 29 14:48 views
+drwxr-xr-x  2 brwnshoecrew brwnshoecrew  4096 Jul 30 07:09 .vscode

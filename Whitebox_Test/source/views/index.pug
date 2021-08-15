@@ -1,0 +1,44 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  title Basic Linux Commands
+  link(rel='stylesheet' href='./style.css')
+form.form(name='ping' method='post')
+  button.btn.block-cube.block-cube-hover(type='submit' formaction='/whoami')
+    .bg-top
+      .bg-inner
+    .bg-right
+      .bg-inner
+    .bg
+      .bg-inner
+    .text
+      | whoami
+  button.btn.block-cube.block-cube-hover(type='submit' formaction='/hostname')
+    .bg-top
+      .bg-inner
+    .bg-right
+      .bg-inner
+    .bg
+      .bg-inner
+    .text
+      | hostname
+  button.btn.block-cube.block-cube-hover(type='submit' formaction='/ifconfig')
+    .bg-top
+      .bg-inner
+    .bg-right
+      .bg-inner
+    .bg
+      .bg-inner
+    .text
+      | ifconfig
+  button.btn.block-cube.block-cube-hover(type='submit' formaction='/ping')
+    .bg-top
+      .bg-inner
+    .bg-right
+      .bg-inner
+    .bg
+      .bg-inner
+    .text
+      | ping
+pre
+  code= response
