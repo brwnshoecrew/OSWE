@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-12-23T02:54:40.312Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="XV-_1O5F0WU0ThRmfGnW" version="20.7.4" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-12-23T02:55:54.137Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="L8zvBeNRz0ELtP-u3CLO" version="20.7.4" type="github" pages="2">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Overall">
     <mxGraphModel dx="3054" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -48,16 +48,16 @@
           <mxGeometry x="470" y="30" width="1130" height="140" as="geometry" />
         </mxCell>
         <mxCell id="G-sO2mh2Iyi2BEA4O4LV-19" value="Pers_Medium.cpp" style="swimlane;fontStyle=5;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#FF6666;" parent="G-sO2mh2Iyi2BEA4O4LV-17" vertex="1">
-          <mxGeometry x="20" y="40" width="150" height="60" as="geometry" />
+          <mxGeometry x="20" y="40" width="150" height="70" as="geometry" />
         </mxCell>
         <mxCell id="G-sO2mh2Iyi2BEA4O4LV-21" value="Medium IL Tools Directory&#xa;(9001.exe / 9002.exe)" style="text;strokeColor=none;fillColor=#FF6666;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" parent="G-sO2mh2Iyi2BEA4O4LV-19" vertex="1">
-          <mxGeometry y="30" width="150" height="30" as="geometry" />
+          <mxGeometry y="30" width="150" height="40" as="geometry" />
         </mxCell>
         <mxCell id="G-sO2mh2Iyi2BEA4O4LV-23" value="9001.cpp&#xa;9002.cpp" style="swimlane;fontStyle=5;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#FF6666;" parent="G-sO2mh2Iyi2BEA4O4LV-17" vertex="1">
-          <mxGeometry x="200" y="40" width="150" height="60" as="geometry" />
+          <mxGeometry x="200" y="40" width="150" height="70" as="geometry" />
         </mxCell>
         <mxCell id="G-sO2mh2Iyi2BEA4O4LV-25" value="Medium IL Tools Directory&#xa;(9001.png / 9002.png)" style="text;strokeColor=none;fillColor=#FF6666;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" parent="G-sO2mh2Iyi2BEA4O4LV-23" vertex="1">
-          <mxGeometry y="30" width="150" height="30" as="geometry" />
+          <mxGeometry y="30" width="150" height="40" as="geometry" />
         </mxCell>
         <mxCell id="G-sO2mh2Iyi2BEA4O4LV-30" value="9001.raw&#xa;9002.raw" style="swimlane;fontStyle=5;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;shadow=0;fillColor=#FF6666;" parent="G-sO2mh2Iyi2BEA4O4LV-17" vertex="1">
           <mxGeometry x="400" y="40" width="140" height="90" as="geometry" />
@@ -82,10 +82,10 @@
         <mxCell id="G-sO2mh2Iyi2BEA4O4LV-39" value="Pers_Medium.exe" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#FF6666;" parent="G-sO2mh2Iyi2BEA4O4LV-49" vertex="1">
           <mxGeometry x="40" y="50" width="110" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="G-sO2mh2Iyi2BEA4O4LV-51" value="Reverse_9001.exe" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#FF6666;" parent="G-sO2mh2Iyi2BEA4O4LV-49" vertex="1">
+        <mxCell id="G-sO2mh2Iyi2BEA4O4LV-51" value="9001.exe" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#FF6666;" parent="G-sO2mh2Iyi2BEA4O4LV-49" vertex="1">
           <mxGeometry x="180" y="50" width="110" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="G-sO2mh2Iyi2BEA4O4LV-52" value="Reverse_9002.exe" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#FF6666;" parent="G-sO2mh2Iyi2BEA4O4LV-49" vertex="1">
+        <mxCell id="G-sO2mh2Iyi2BEA4O4LV-52" value="9002.exe" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#FF6666;" parent="G-sO2mh2Iyi2BEA4O4LV-49" vertex="1">
           <mxGeometry x="310" y="50" width="110" height="40" as="geometry" />
         </mxCell>
         <mxCell id="G-sO2mh2Iyi2BEA4O4LV-53" value="9001.png" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#FF6666;" parent="G-sO2mh2Iyi2BEA4O4LV-49" vertex="1">
@@ -106,16 +106,16 @@
         <mxCell id="P6aCfQ930mBBJoiv-hOj-13" value="Pers_Medium.cpp" style="text;strokeColor=none;fillColor=#FF6666;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="P6aCfQ930mBBJoiv-hOj-12">
           <mxGeometry y="30" width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="P6aCfQ930mBBJoiv-hOj-14" value="Reverse_9001.cpp" style="text;strokeColor=none;fillColor=#FF6666;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="P6aCfQ930mBBJoiv-hOj-12">
+        <mxCell id="P6aCfQ930mBBJoiv-hOj-14" value="9001.cpp" style="text;strokeColor=none;fillColor=#FF6666;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="P6aCfQ930mBBJoiv-hOj-12">
           <mxGeometry y="60" width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="P6aCfQ930mBBJoiv-hOj-15" value="Reverse_9002.cpp" style="text;strokeColor=none;fillColor=#FF6666;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="P6aCfQ930mBBJoiv-hOj-12">
+        <mxCell id="P6aCfQ930mBBJoiv-hOj-15" value="9002.cpp" style="text;strokeColor=none;fillColor=#FF6666;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="P6aCfQ930mBBJoiv-hOj-12">
           <mxGeometry y="90" width="140" height="30" as="geometry" />
         </mxCell>
         <mxCell id="G-sO2mh2Iyi2BEA4O4LV-35" value="Generate MSFVenmon Payload and Embed Into png" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#FF6666;" parent="P6aCfQ930mBBJoiv-hOj-9" vertex="1">
           <mxGeometry x="255" y="40" width="160" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="G-sO2mh2Iyi2BEA4O4LV-38" value="cp original.png combined.png; cat payload_reverse_shell_port#.raw &amp;gt;&amp;gt; combined.png" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#FF6666;" parent="P6aCfQ930mBBJoiv-hOj-9" vertex="1">
+        <mxCell id="G-sO2mh2Iyi2BEA4O4LV-38" value="cp original.png combined.png; cat port#.raw &amp;gt;&amp;gt; Port#.png" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#FF6666;" parent="P6aCfQ930mBBJoiv-hOj-9" vertex="1">
           <mxGeometry x="440" y="40" width="290" height="50" as="geometry" />
         </mxCell>
         <mxCell id="P6aCfQ930mBBJoiv-hOj-24" value="Execute Persistence Payloads" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#00CC00;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
@@ -133,7 +133,7 @@
         <mxCell id="P7n5YuG6-lRFGP6FSJ7v-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.438;exitY=0.997;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="P6aCfQ930mBBJoiv-hOj-24" source="G-sO2mh2Iyi2BEA4O4LV-5" target="P7n5YuG6-lRFGP6FSJ7v-0">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="P6aCfQ930mBBJoiv-hOj-0" value="Execute Reverse_9001.exe" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#FFFFFF;strokeColor=#00CC00;" vertex="1" parent="P6aCfQ930mBBJoiv-hOj-24">
+        <mxCell id="P6aCfQ930mBBJoiv-hOj-0" value="Execute 9001.exe" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#FFFFFF;strokeColor=#00CC00;" vertex="1" parent="P6aCfQ930mBBJoiv-hOj-24">
           <mxGeometry x="470" y="100" width="120" height="50" as="geometry" />
         </mxCell>
         <mxCell id="P6aCfQ930mBBJoiv-hOj-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;dashed=1;" edge="1" parent="P6aCfQ930mBBJoiv-hOj-24" source="P7n5YuG6-lRFGP6FSJ7v-0" target="P6aCfQ930mBBJoiv-hOj-0">
@@ -142,7 +142,7 @@
             <mxPoint x="505" y="225" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="P6aCfQ930mBBJoiv-hOj-1" value="Execute Reverse_9002.exe" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#FFFFFF;strokeColor=#00CC00;" vertex="1" parent="P6aCfQ930mBBJoiv-hOj-24">
+        <mxCell id="P6aCfQ930mBBJoiv-hOj-1" value="Execute 9002.exe" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#FFFFFF;strokeColor=#00CC00;" vertex="1" parent="P6aCfQ930mBBJoiv-hOj-24">
           <mxGeometry x="470" y="170" width="120" height="50" as="geometry" />
         </mxCell>
         <mxCell id="P6aCfQ930mBBJoiv-hOj-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="P6aCfQ930mBBJoiv-hOj-24" source="P7n5YuG6-lRFGP6FSJ7v-0" target="P6aCfQ930mBBJoiv-hOj-1">
