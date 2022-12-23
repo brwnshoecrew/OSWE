@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-12-23T02:30:01.777Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="EXBkDV_hTeFghdXDQkOd" version="20.7.4" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-12-23T02:40:53.189Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="M4Vf0r8fvjhxr8Uolz_F" version="20.7.4" type="github" pages="2">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Overall">
-    <mxGraphModel dx="1600" dy="701" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="862" dy="378" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -30,10 +30,10 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-10" value="" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="170" y="290" width="100" height="80" as="geometry" />
+          <mxGeometry x="170" y="340" width="100" height="80" as="geometry" />
         </mxCell>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-11" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="160" y="430" width="120" height="40" as="geometry" />
+          <mxGeometry x="170" y="1110" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="G-sO2mh2Iyi2BEA4O4LV-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="G-sO2mh2Iyi2BEA4O4LV-14" target="WIyWlLk6GJQsqaUBKTNV-6" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -98,7 +98,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="P6aCfQ930mBBJoiv-hOj-9" value="Compile Persistance Payloads" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FF6666;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="470" y="230" width="880" height="160" as="geometry" />
+          <mxGeometry x="470" y="230" width="880" height="180" as="geometry" />
         </mxCell>
         <mxCell id="P6aCfQ930mBBJoiv-hOj-12" value="Compile EXE&#39;s" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FF6666;" vertex="1" parent="P6aCfQ930mBBJoiv-hOj-9">
           <mxGeometry x="70" y="40" width="140" height="120" as="geometry" />
@@ -119,7 +119,7 @@
           <mxGeometry x="440" y="40" width="290" height="50" as="geometry" />
         </mxCell>
         <mxCell id="P6aCfQ930mBBJoiv-hOj-24" value="Execute Persistence Payloads" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#00CC00;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="470" y="618" width="890" height="240" as="geometry" />
+          <mxGeometry x="470" y="618" width="980" height="252" as="geometry" />
         </mxCell>
         <mxCell id="G-sO2mh2Iyi2BEA4O4LV-5" value="Download staged binaries and png&#39;s to Medium IL Tools directory." style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#00CC00;" parent="P6aCfQ930mBBJoiv-hOj-24" vertex="1">
           <mxGeometry x="35" y="45" width="120" height="80" as="geometry" />
@@ -159,6 +159,12 @@
         </mxCell>
         <mxCell id="P6aCfQ930mBBJoiv-hOj-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" edge="1" parent="P6aCfQ930mBBJoiv-hOj-24" source="P6aCfQ930mBBJoiv-hOj-1" target="P6aCfQ930mBBJoiv-hOj-6">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="P6aCfQ930mBBJoiv-hOj-26" value="Registry&lt;br&gt;Run Key" style="shape=trapezoid;perimeter=trapezoidPerimeter;whiteSpace=wrap;html=1;fixedSize=1;strokeColor=#000000;fillColor=#00CC00;" vertex="1" parent="P6aCfQ930mBBJoiv-hOj-24">
+          <mxGeometry x="750" y="125" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="P6aCfQ930mBBJoiv-hOj-27" value="Startup&lt;br&gt;Folder" style="shape=trapezoid;perimeter=trapezoidPerimeter;whiteSpace=wrap;html=1;fixedSize=1;strokeColor=#000000;fillColor=#00CC00;" vertex="1" parent="P6aCfQ930mBBJoiv-hOj-24">
+          <mxGeometry x="750" y="200" width="80" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
