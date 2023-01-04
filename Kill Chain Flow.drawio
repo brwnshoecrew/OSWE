@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-01-04T14:21:36.881Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="70M4-pWc869hZqZztkxU" version="20.8.1" type="github">
+<mxfile host="app.diagrams.net" modified="2023-01-04T14:22:36.236Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="8HZV2Hbyk7jcYiCo1NZm" version="20.8.1" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Overall">
     <mxGraphModel dx="2774" dy="457" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -140,8 +140,8 @@
         <mxCell id="P7n5YuG6-lRFGP6FSJ7v-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.438;exitY=0.997;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="P6aCfQ930mBBJoiv-hOj-24" source="G-sO2mh2Iyi2BEA4O4LV-5" target="P7n5YuG6-lRFGP6FSJ7v-0" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="P6aCfQ930mBBJoiv-hOj-1" value="Execute reverse.exe w/ cmdline arg" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=none;strokeColor=#00CC00;" parent="P6aCfQ930mBBJoiv-hOj-24" vertex="1">
-          <mxGeometry x="590" y="164" width="120" height="50" as="geometry" />
+        <mxCell id="P6aCfQ930mBBJoiv-hOj-1" value="Execute reverse_9001.exe" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=none;strokeColor=#00CC00;" parent="P6aCfQ930mBBJoiv-hOj-24" vertex="1">
+          <mxGeometry x="590" y="135" width="120" height="50" as="geometry" />
         </mxCell>
         <mxCell id="P6aCfQ930mBBJoiv-hOj-5" value="Read Payload From 9001.png" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=none;strokeColor=#00CC00;" parent="P6aCfQ930mBBJoiv-hOj-24" vertex="1">
           <mxGeometry x="760" y="125" width="120" height="50" as="geometry" />
@@ -154,14 +154,17 @@
         <mxCell id="P6aCfQ930mBBJoiv-hOj-6" value="Read Payload From 9002.png" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=none;strokeColor=#00CC00;" parent="P6aCfQ930mBBJoiv-hOj-24" vertex="1">
           <mxGeometry x="760" y="202" width="120" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="P6aCfQ930mBBJoiv-hOj-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="P6aCfQ930mBBJoiv-hOj-24" source="P6aCfQ930mBBJoiv-hOj-1" target="P6aCfQ930mBBJoiv-hOj-6" edge="1">
+        <mxCell id="P6aCfQ930mBBJoiv-hOj-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="P6aCfQ930mBBJoiv-hOj-24" source="kM2FHF2urjBJhsgAb-iy-3" target="P6aCfQ930mBBJoiv-hOj-6" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="P6aCfQ930mBBJoiv-hOj-26" value="Registry&lt;br&gt;Run Key" style="shape=trapezoid;perimeter=trapezoidPerimeter;whiteSpace=wrap;html=1;fixedSize=1;strokeColor=#000000;fillColor=#00CC00;" parent="P6aCfQ930mBBJoiv-hOj-24" vertex="1">
-          <mxGeometry x="370" y="122" width="120" height="40" as="geometry" />
+          <mxGeometry x="370" y="125" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="P6aCfQ930mBBJoiv-hOj-27" value="Startup&lt;br&gt;Folder" style="shape=trapezoid;perimeter=trapezoidPerimeter;whiteSpace=wrap;html=1;fixedSize=1;strokeColor=#000000;fillColor=#00CC00;" parent="P6aCfQ930mBBJoiv-hOj-24" vertex="1">
           <mxGeometry x="370" y="225" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="kM2FHF2urjBJhsgAb-iy-3" value="Execute reverse_9002.exe" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=none;strokeColor=#00CC00;" vertex="1" parent="P6aCfQ930mBBJoiv-hOj-24">
+          <mxGeometry x="590" y="225" width="120" height="50" as="geometry" />
         </mxCell>
         <mxCell id="c0Sctn81WB5nrNk0CtNy-0" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="P6aCfQ930mBBJoiv-hOj-30" target="P6aCfQ930mBBJoiv-hOj-47" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -552,7 +555,7 @@
             <mxPoint x="840" y="745" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="dP6RbfBJEISetV5Z3pFI-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="dP6RbfBJEISetV5Z3pFI-1" target="P6aCfQ930mBBJoiv-hOj-1" edge="1">
+        <mxCell id="dP6RbfBJEISetV5Z3pFI-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="dP6RbfBJEISetV5Z3pFI-1" target="kM2FHF2urjBJhsgAb-iy-3" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="960" y="745.0588235294117" as="sourcePoint" />
             <mxPoint x="1010" y="783" as="targetPoint" />
