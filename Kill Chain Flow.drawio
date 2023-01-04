@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-01-02T23:52:11.466Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="9BworF57v_1f4omEe85B" version="20.8.0" type="github">
+<mxfile host="app.diagrams.net" modified="2023-01-04T14:21:36.881Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="70M4-pWc869hZqZztkxU" version="20.8.1" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Overall">
-    <mxGraphModel dx="3377" dy="703" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2774" dy="457" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -48,12 +48,12 @@
           <mxGeometry x="470" y="30" width="1130" height="140" as="geometry" />
         </mxCell>
         <mxCell id="G-sO2mh2Iyi2BEA4O4LV-19" value="Pers_Medium.cpp" style="swimlane;fontStyle=5;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#FF6666;" parent="G-sO2mh2Iyi2BEA4O4LV-17" vertex="1">
-          <mxGeometry x="20" y="40" width="150" height="70" as="geometry" />
+          <mxGeometry x="20" y="40" width="150" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="G-sO2mh2Iyi2BEA4O4LV-21" value="Medium IL Tools Directory&#xa;(reverse.exe)" style="text;strokeColor=none;fillColor=#FF6666;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" parent="G-sO2mh2Iyi2BEA4O4LV-19" vertex="1">
-          <mxGeometry y="30" width="150" height="40" as="geometry" />
+        <mxCell id="G-sO2mh2Iyi2BEA4O4LV-21" value="Medium IL Tools Directory&#xa;(reverse_9001.exe / &#xa;reverse_9002.exe)" style="text;strokeColor=none;fillColor=#FF6666;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" parent="G-sO2mh2Iyi2BEA4O4LV-19" vertex="1">
+          <mxGeometry y="30" width="150" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="G-sO2mh2Iyi2BEA4O4LV-23" value="reverse.cpp" style="swimlane;fontStyle=5;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#FF6666;" parent="G-sO2mh2Iyi2BEA4O4LV-17" vertex="1">
+        <mxCell id="G-sO2mh2Iyi2BEA4O4LV-23" value="reverse_9001.cpp&#xa;reverse_9002.cpp" style="swimlane;fontStyle=5;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#FF6666;" parent="G-sO2mh2Iyi2BEA4O4LV-17" vertex="1">
           <mxGeometry x="200" y="40" width="150" height="70" as="geometry" />
         </mxCell>
         <mxCell id="G-sO2mh2Iyi2BEA4O4LV-25" value="Medium IL Tools Directory&#xa;(9001.png / 9002.png)" style="text;strokeColor=none;fillColor=#FF6666;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" parent="G-sO2mh2Iyi2BEA4O4LV-23" vertex="1">
@@ -75,42 +75,53 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="G-sO2mh2Iyi2BEA4O4LV-49" value="Stage Persistance Payloads" style="swimlane;shadow=0;fillColor=#FF6666;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="470" y="460" width="600" height="110" as="geometry">
+          <mxGeometry x="470" y="460" width="690" height="110" as="geometry">
             <mxRectangle x="480" y="340" width="70" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="G-sO2mh2Iyi2BEA4O4LV-39" value="Pers_Medium.exe" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#FF6666;" parent="G-sO2mh2Iyi2BEA4O4LV-49" vertex="1">
           <mxGeometry x="40" y="50" width="110" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="G-sO2mh2Iyi2BEA4O4LV-51" value="reverse.exe" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#FF6666;" parent="G-sO2mh2Iyi2BEA4O4LV-49" vertex="1">
+        <mxCell id="G-sO2mh2Iyi2BEA4O4LV-51" value="reverse_9001.exe" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#FF6666;" parent="G-sO2mh2Iyi2BEA4O4LV-49" vertex="1">
           <mxGeometry x="180" y="50" width="110" height="40" as="geometry" />
         </mxCell>
         <mxCell id="G-sO2mh2Iyi2BEA4O4LV-53" value="9001.png" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#FF6666;" parent="G-sO2mh2Iyi2BEA4O4LV-49" vertex="1">
-          <mxGeometry x="330" y="50" width="110" height="40" as="geometry" />
+          <mxGeometry x="430" y="50" width="110" height="40" as="geometry" />
         </mxCell>
         <mxCell id="G-sO2mh2Iyi2BEA4O4LV-54" value="9002.png" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#FF6666;" parent="G-sO2mh2Iyi2BEA4O4LV-49" vertex="1">
-          <mxGeometry x="460" y="50" width="110" height="40" as="geometry" />
+          <mxGeometry x="560" y="50" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="kM2FHF2urjBJhsgAb-iy-2" value="reverse_9002.exe" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#FF6666;" vertex="1" parent="G-sO2mh2Iyi2BEA4O4LV-49">
+          <mxGeometry x="310" y="50" width="110" height="40" as="geometry" />
         </mxCell>
         <mxCell id="P6aCfQ930mBBJoiv-hOj-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="P6aCfQ930mBBJoiv-hOj-9" target="G-sO2mh2Iyi2BEA4O4LV-49" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="P6aCfQ930mBBJoiv-hOj-9" value="Compile Persistance Payloads" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#FFFFFF;fillColor=#FF6666;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="470" y="230" width="880" height="150" as="geometry" />
-        </mxCell>
-        <mxCell id="P6aCfQ930mBBJoiv-hOj-12" value="Compile EXE&#39;s" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FF6666;" parent="P6aCfQ930mBBJoiv-hOj-9" vertex="1">
-          <mxGeometry x="70" y="40" width="140" height="90" as="geometry" />
-        </mxCell>
-        <mxCell id="P6aCfQ930mBBJoiv-hOj-13" value="Pers_Medium.cpp" style="text;strokeColor=none;fillColor=#FF6666;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="P6aCfQ930mBBJoiv-hOj-12" vertex="1">
-          <mxGeometry y="30" width="140" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="P6aCfQ930mBBJoiv-hOj-14" value="reverse.cpp" style="text;strokeColor=none;fillColor=#FF6666;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="P6aCfQ930mBBJoiv-hOj-12" vertex="1">
-          <mxGeometry y="60" width="140" height="30" as="geometry" />
+          <mxGeometry x="470" y="230" width="880" height="160" as="geometry" />
         </mxCell>
         <mxCell id="G-sO2mh2Iyi2BEA4O4LV-35" value="Embed MSFVenmon Payload Into png" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#FF6666;" parent="P6aCfQ930mBBJoiv-hOj-9" vertex="1">
           <mxGeometry x="255" y="40" width="160" height="50" as="geometry" />
         </mxCell>
         <mxCell id="G-sO2mh2Iyi2BEA4O4LV-38" value="cp original.png combined.png; cat port#.raw &amp;gt;&amp;gt; Port#.png" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#FF6666;" parent="P6aCfQ930mBBJoiv-hOj-9" vertex="1">
           <mxGeometry x="440" y="40" width="290" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="kM2FHF2urjBJhsgAb-iy-1" value="" style="group" vertex="1" connectable="0" parent="P6aCfQ930mBBJoiv-hOj-9">
+          <mxGeometry x="70" y="30" width="140" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="P6aCfQ930mBBJoiv-hOj-12" value="Compile EXE&#39;s" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FF6666;" parent="kM2FHF2urjBJhsgAb-iy-1" vertex="1">
+          <mxGeometry width="140" height="90" as="geometry">
+            <mxRectangle width="120" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P6aCfQ930mBBJoiv-hOj-13" value="Pers_Medium.cpp" style="text;strokeColor=none;fillColor=#FF6666;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="P6aCfQ930mBBJoiv-hOj-12" vertex="1">
+          <mxGeometry y="30" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="P6aCfQ930mBBJoiv-hOj-14" value="reverse_9001.cpp" style="text;strokeColor=none;fillColor=#FF6666;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="P6aCfQ930mBBJoiv-hOj-12" vertex="1">
+          <mxGeometry y="60" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kM2FHF2urjBJhsgAb-iy-0" value="reverse_9002.cpp" style="text;strokeColor=none;fillColor=#FF6666;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="kM2FHF2urjBJhsgAb-iy-1">
+          <mxGeometry y="90" width="140" height="30" as="geometry" />
         </mxCell>
         <mxCell id="P6aCfQ930mBBJoiv-hOj-24" value="Execute Persistence Payloads" style="swimlane;whiteSpace=wrap;html=1;strokeColor=#FFFFFF;fillColor=#00CC00;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="470" y="596" width="910" height="322" as="geometry">
